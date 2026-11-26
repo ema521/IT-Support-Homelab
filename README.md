@@ -23,7 +23,7 @@ N.B.: Gli indirizzi IP e le porte menzionate o le shell riportate sul porfolio, 
   - RAM: 32 GB DDR4 (2x16 GB)
   - Storage: SSD NVMe (prima usavo un SSD SATA, ora scollegato)
   - Scheda di rete: Intel I219-LM (driver `e1000e`)
-- **PC da cui lavoro**: laptop con Linux Mint
+- **PC da cui lavoro**: thin client con Linux Mint
 - **Router**: Vodafone Station (rete `192.168.0.0/24`)
 - **Access point**: TP-Link WR802N
 - **Firewall** (in programma): Fujitsu Futro S900
