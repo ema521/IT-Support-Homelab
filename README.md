@@ -18,7 +18,7 @@ N.B.: Gli indirizzi IP e le porte menzionate o le shell riportate sul porfolio, 
 
 ## Hardware
 
-- **Host principale**: HP EliteDesk 800 G2 (SFF)
+- **Host principale**: HP EliteDesk 800 G2
   - CPU: Intel Core i7-6700
   - RAM: 32 GB DDR4 (2x16 GB)
   - Storage: SSD NVMe (prima usavo un SSD SATA, ora scollegato)
