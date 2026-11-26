@@ -50,3 +50,21 @@ Alla fine il problema **non l'ho risolto**. Ho tolto il disco dall'HP, l'ho coll
 ## Il primo accesso all'interfaccia web
 
 Al primo login il mio utente veniva rifiutato. Il motivo era il campo "Realm": per entrare con `root` va scelto "Linux PAM". L'altra opzione, "Proxmox VE authentication server", usa gli utenti interni di Proxmox, dove `root` non esiste.
+
+## Alcuni upgrade hardware sull'host
+
+**Modello:** HP EliteDesk 800 G2 Mini – CPU Intel Core i7-6700T
+
+| Componente | Prima | Dopo | Motivazione |
+|---|---|---|---|
+| RAM | 2 × 4 GB DDR4-2133 SO-DIMM (SK hynix HMA451S6AFR8N-TF) = 8 GB | 2 × 16 GB DDR4 SO-DIMM [Kingston KVR26S19S8/16, 2666 MHz] = 32 GB | Eseguire più VM contemporaneamente |
+| Disco di sistema | SSD SATA 2,5" Samsung PM871 da 128 GB | SSD NVMe M.2 2280 [Samsung PM991A, 512 GB] | Maggiore velocità di lettura/scrittura per le VM |
+| Scheda Wi-Fi | Assente (solo antenne) | Intel Dual Band Wireless-AC 8260 (M.2 2230) | Connettività wireless dell'host |
+
+**Verifica** (dalla shell di Proxmox):
+
+```bash
+free -h
+lsblk -d -o NAME,MODEL,SIZE,TRAN
+lspci | grep -i network
+```
